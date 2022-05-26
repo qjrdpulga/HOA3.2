@@ -1,0 +1,10 @@
+---
+# tasks file for bind9
+- name: install bind9 for CentOS
+  yum:
+   name:
+     - bind
+     - bind-utils
+   state: latest
+   update_cache: yes
+  when: ansible_distribution == "CentOS"

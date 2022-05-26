@@ -1,0 +1,8 @@
+---
+# tasks file for maria_db
+- name: install mariadb server package(CentOS)
+  tags: centos, db, mariadb
+  yum:
+   name: mariadb-server
+   state: latest
+  when: ansible_distribution == "CentOS"

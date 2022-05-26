@@ -1,0 +1,7 @@
+---
+# tasks file for samba
+- name: install samba package
+  package:
+    name: samba
+    state: latest
+    update_cache: yes

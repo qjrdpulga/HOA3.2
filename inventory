@@ -1,0 +1,2 @@
+[centos-server]
+192.168.56.105 apache_package=httpd

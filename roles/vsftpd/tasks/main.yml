@@ -1,0 +1,7 @@
+---
+# tasks file for vsftpd
+- name: install vsftpd for CentOS
+  yum:
+   name: vsftpd
+   state: latest
+  when: ansible_distribution == "CentOS"

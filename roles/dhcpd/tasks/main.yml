@@ -1,0 +1,8 @@
+---
+# tasks file for dhcpd
+- name: install dhcpd(CentOS)
+  package:
+   name: dhcp
+   state: latest
+   update_cache: yes
+  when: ansible_distribution == "CentOS"
